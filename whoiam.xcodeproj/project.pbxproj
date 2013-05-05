@@ -50,7 +50,6 @@
 		2173496A172C6AFB00EE7FDC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21734969172C6AFB00EE7FDC /* CoreMedia.framework */; };
 		2173496C172C6B0500EE7FDC /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2173496B172C6B0500EE7FDC /* MediaPlayer.framework */; };
 		2173496F172C6CA100EE7FDC /* VGRecordVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173496E172C6CA000EE7FDC /* VGRecordVideoViewController.m */; };
-		21734973172C74BA00EE7FDC /* FPPicker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21734971172C74BA00EE7FDC /* FPPicker.framework */; };
 		21734975172C750500EE7FDC /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21734974172C750500EE7FDC /* CoreFoundation.framework */; };
 		217349A1172C833B00EE7FDC /* AWSRuntime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2173499F172C833B00EE7FDC /* AWSRuntime.framework */; };
 		217349A2172C833B00EE7FDC /* AWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217349A0172C833B00EE7FDC /* AWSS3.framework */; };
@@ -145,7 +144,6 @@
 		2173496B172C6B0500EE7FDC /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		2173496D172C6CA000EE7FDC /* VGRecordVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VGRecordVideoViewController.h; sourceTree = "<group>"; };
 		2173496E172C6CA000EE7FDC /* VGRecordVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VGRecordVideoViewController.m; sourceTree = "<group>"; };
-		21734971172C74BA00EE7FDC /* FPPicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FPPicker.framework; sourceTree = "<group>"; };
 		21734974172C750500EE7FDC /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		2173499F172C833B00EE7FDC /* AWSRuntime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSRuntime.framework; sourceTree = "<group>"; };
 		217349A0172C833B00EE7FDC /* AWSS3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AWSS3.framework; sourceTree = "<group>"; };
@@ -182,7 +180,6 @@
 				217348F1172C323C00EE7FDC /* UIKit.framework in Frameworks */,
 				217348F3172C323C00EE7FDC /* Foundation.framework in Frameworks */,
 				2173490E172C32E200EE7FDC /* Parse.framework in Frameworks */,
-				21734973172C74BA00EE7FDC /* FPPicker.framework in Frameworks */,
 				217349A1172C833B00EE7FDC /* AWSRuntime.framework in Frameworks */,
 				217349A2172C833B00EE7FDC /* AWSS3.framework in Frameworks */,
 			);
@@ -218,7 +215,6 @@
 				21734969172C6AFB00EE7FDC /* CoreMedia.framework */,
 				21734967172C6AF100EE7FDC /* AVFoundation.framework */,
 				21734965172C6AE800EE7FDC /* AssetsLibrary.framework */,
-				21734971172C74BA00EE7FDC /* FPPicker.framework */,
 				2173494D172C5E3E00EE7FDC /* GMGridView */,
 				2173492C172C3F6100EE7FDC /* AFNetworking */,
 				2173491F172C337C00EE7FDC /* SystemConfiguration.framework */,

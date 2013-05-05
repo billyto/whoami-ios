@@ -1,4 +1,6 @@
 AFNetworking/
 GMGridView/
 Parse.framework/
+AWSS3.framework/
 AWSRuntime.framework/
+whoiam.xcodeproj/
