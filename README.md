@@ -3,7 +3,7 @@ Who am I? (iOS Client)
 
 A mobile web app built for the [viggle][Viggle] platform. One half of the Who am I? app. Who am I? allows a user to record an impersonation of a character from a TV show. Other users can then watch the resulting video and pick which character they think was referenced. Picking the correct answer will get them Viggle points.
 
-The other half is a Javascript app (Node with Express)  written by [vapp][Teddy Wing] that allows users to  watch the recorded video and guess the character represented.
+The other half is a Javascript app (Node with Express)  written by [Teddy Wing][vapp] that allows users to  watch the recorded video and guess the character represented.
 
 
 
@@ -28,7 +28,7 @@ Please consider the quality of this code as a hackhaton excercise and obviously 
 
 
 License
--------
+----
 Who am I? is licensed under the MIT License.
 
 
