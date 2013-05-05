@@ -3,19 +3,19 @@
 //  whoiam
 //
 //  Created by Billy Tobon on 4/27/13.
-//  Copyright (c) 2013 viggle. All rights reserved.
+//  Licensed under the MIT License.
 //
 
 #import "VGAppDelegate.h"
+#import <Parse/Parse.h>
 
 @implementation VGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    [Parse setApplicationId:PARSE_APP_ID
+                  clientKey:PARSE_CLIENT_KEY];
+    
     return YES;
 }
 

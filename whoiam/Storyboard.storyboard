@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="HH0-en-ZQY">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Intro View Controller-->
+        <scene sceneID="ER9-Wy-Dfz">
+            <objects>
+                <viewController id="mgL-dZ-gif" customClass="VGIntroViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NVc-e5-LwG">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pRn-ua-tON">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="WeL-OP-A1L"/>
+                                    <constraint firstAttribute="width" constant="112" id="luw-oA-ft2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Pick a Show" backgroundImage="hbutton.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickShow:" destination="mgL-dZ-gif" eventType="touchUpInside" id="UVd-d8-BnE"/>
+                                    <segue destination="ApB-OF-QZz" kind="push" identifier="segue_show" id="GW8-xN-lJL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Who Am I?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK5-AE-Ylt">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="9mn-My-aQJ"/>
+                                    <constraint firstAttribute="width" constant="122" id="UvX-ab-9jB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fK5-AE-Ylt" firstAttribute="top" secondItem="NVc-e5-LwG" secondAttribute="top" constant="137" id="GRM-YR-ehc"/>
+                            <constraint firstItem="fK5-AE-Ylt" firstAttribute="centerX" secondItem="NVc-e5-LwG" secondAttribute="centerX" type="default" id="Vtl-bl-CIC"/>
+                            <constraint firstItem="pRn-ua-tON" firstAttribute="leading" secondItem="fK5-AE-Ylt" secondAttribute="leading" type="default" id="YLY-P8-5Su"/>
+                            <constraint firstAttribute="bottom" secondItem="pRn-ua-tON" secondAttribute="bottom" constant="163" id="ZrY-ql-xx1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="w0B-Bk-Dhz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jbM-b3-o4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-811" y="48"/>
+        </scene>
+        <!--Shows View Controller-->
+        <scene sceneID="izn-Fg-taK">
+            <objects>
+                <tableViewController id="ApB-OF-QZz" customClass="VGShowsViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Dol-SP-1FY">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="Cell_show" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell_show" textLabel="Jtd-Gr-iIA" style="IBUITableViewCellStyleDefault" id="S0q-as-8yP">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtd-Gr-iIA">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="PfU-lX-fAr" kind="push" identifier="segue_cast" id="1R7-NY-9VG"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ApB-OF-QZz" id="gpy-7Y-i1s"/>
+                            <outlet property="delegate" destination="ApB-OF-QZz" id="fk0-4M-aDc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="MeQ-eU-gR8"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qGC-YR-7Gm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-379" y="48"/>
+        </scene>
+        <!--Charade View Controller-->
+        <scene sceneID="vpb-su-dMy">
+            <objects>
+                <viewController id="ObA-Zu-g2E" customClass="VGCharadeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hyE-xM-6nJ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39J-BH-Xe4">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="igW-aR-tqI"/>
+                                    <constraint firstAttribute="width" constant="76" id="vz4-Xo-aa3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Record" backgroundImage="hbutton.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordAndPlay:" destination="ObA-Zu-g2E" eventType="touchUpInside" id="Nlq-ci-pCn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJ3-Bz-HUP">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Fuq-mf-i0U"/>
+                                    <constraint firstAttribute="width" constant="75" id="g1G-ix-hNH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Submit" backgroundImage="hbutton.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SubmitAction:" destination="ObA-Zu-g2E" eventType="touchUpInside" id="bK2-Vk-Blj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="39J-BH-Xe4" firstAttribute="centerX" secondItem="hyE-xM-6nJ" secondAttribute="centerX" type="default" id="630-Pu-alI"/>
+                            <constraint firstItem="39J-BH-Xe4" firstAttribute="top" secondItem="hyE-xM-6nJ" secondAttribute="top" constant="138" id="NRX-Wy-Qrz"/>
+                            <constraint firstItem="uJ3-Bz-HUP" firstAttribute="leading" secondItem="39J-BH-Xe4" secondAttribute="leading" type="default" id="eST-N0-3C8"/>
+                            <constraint firstItem="uJ3-Bz-HUP" firstAttribute="top" secondItem="hyE-xM-6nJ" secondAttribute="top" constant="233" id="y3z-w8-dRy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8WQ-On-oLr"/>
+                    <connections>
+                        <outlet property="recordButton" destination="39J-BH-Xe4" id="bzA-nf-qYq"/>
+                        <outlet property="submitButton" destination="uJ3-Bz-HUP" id="2rt-U3-uu5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TzW-cG-1Ov" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="36"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f5A-T4-WUR">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="HH0-en-ZQY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6DC-5H-gis">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mgL-dZ-gif" kind="relationship" relationship="rootViewController" id="SiP-Bw-EaI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OZ2-xn-aWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1209" y="48"/>
+        </scene>
+        <!--Cast View Controller-->
+        <scene sceneID="1lz-2s-MHa">
+            <objects>
+                <viewController id="PfU-lX-fAr" customClass="VGCastViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zuJ-o3-7kq">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MpP-YU-vPx"/>
+                    <connections>
+                        <segue destination="ObA-Zu-g2E" kind="push" identifier="segue_record" id="djO-BI-jxK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pB5-Po-fpw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37" y="48"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hbutton.png" width="212" height="67"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="VGCastViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VGCastViewController.h"/>
+        </class>
+        <class className="VGCharadeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VGCharadeViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="SubmitAction:"/>
+                <relationship kind="action" name="recordAndPlay:"/>
+                <relationship kind="outlet" name="recordButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="submitButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="VGIntroViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VGIntroViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="pickShow:"/>
+                <relationship kind="action" name="record:"/>
+            </relationships>
+        </class>
+        <class className="VGShowsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/VGShowsViewController.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
